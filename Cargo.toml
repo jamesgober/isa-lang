@@ -3,7 +3,7 @@
 # =============================================================================
 [package]
 name    = "isa-lang"
-version = "0.1.0"
+version = "0.2.0"
 
 # Minimum Supported Rust Version (MSRV)
 rust-version = "1.85"
@@ -45,13 +45,16 @@ path = "src/lib.rs"
 # #################################
 [features]
 default = ["std"]
+# The crate is `no_std` and needs only `alloc`; `std` adds nothing today and
+# exists so dependants can forward it without a breaking change later.
 std = []
 
 
 # DEPENDENCIES
 # #################################
 [dependencies]
-# First-party -lang dependencies are wired at v0.2.0, when first used.
+# None. The x86-64 tables, encoder, decoder, and assembler are self-contained:
+# no first-party crate has a type this layer needs (see dev/ROADMAP.md).
 
 
 # DEV DEPENDENCIES
