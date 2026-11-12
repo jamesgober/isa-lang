@@ -70,7 +70,7 @@ Decisions recorded at 0.2.0:
 - [ ] `fs:`/`gs:` segment-override prefixes for TLS access (needed by rt-lang); `LOCK` with the
       atomic forms the backend emits (`xchg` is implicitly locked; `cmpxchg`, `xadd`).
 - [ ] AArch64 cache-maintenance rule as data (TARGET-DESC §10).
-- [ ] Implicit operands as table data: implicit register uses/defs (`RDX:RAX` for mul/div/cqo, `RSP` for push/pop/call/ret, `CL` counts) so backend-lang's register allocator can read them (coordinator review of 0.2.0).
+- [ ] Implicit operands as table data: implicit register uses/defs (`RDX:RAX` for mul/div/cqo, `RSP` for push/pop/call/ret, `CL` counts) so backend-lang's register allocator can read them (review of 0.2.0).
 - [ ] `Form::mnemonic()` structured accessor (backend-lang needs it; tests currently parse the syntax string).
 - [ ] Assembler: alignment directive, external-symbol relocations for object-lang/AOT, cross-assembler label check.
 
