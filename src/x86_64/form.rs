@@ -4,7 +4,7 @@
 //! recipe (`REX.W 83 /0 ib`) and an operand signature (`ADD r/m64, imm8`),
 //! plus the flags it touches. The encoder and decoder never contain
 //! per-instruction code; they interpret these records. See
-//! `_lexersketch/specs/TARGET-DESC.md` for the model.
+//! the TARGET-DESC specification for the model.
 
 use core::fmt;
 

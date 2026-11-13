@@ -1,8 +1,7 @@
 # isa-lang - Roadmap
 
 > Path from scaffold to a stable 1.0. Hard parts are front-loaded; each phase has hard exit criteria.
-> Master plan: ../_lexersketch/ROADMAP.md and ../_lexersketch/NEW-LIBS.md
-> Specification: ../_lexersketch/specs/TARGET-DESC.md
+> Specification: the TARGET-DESC specification
 >
 > **Anti-deferral rule:** no listed hard task moves to a later phase unless this file records the move and the reason.
 
@@ -14,7 +13,7 @@ Compiles, CI green, structure correct, no domain logic.
 - [x] Target-description table format; x86-64 integer, control-flow, and memory core: encoder, decoder, round-trip property tests.
 
 Delivered:
-- `_lexersketch/specs/TARGET-DESC.md`: the target-description model (registers and classes,
+- the TARGET-DESC specification: the target-description model (registers and classes,
   operand kinds, ModRM/SIB memory operands, immediates, relative targets, forms as encoding
   recipe + operand signature + flag effects + attributes, the patterns hook, the ABI placeholder,
   cache-maintenance rules), how the engines interpret it, and how AArch64 fits the same model.

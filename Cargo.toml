@@ -19,7 +19,7 @@ readme = "README.md"
 description = "Instruction encoders, decoders, and assemblers for x86-64 and AArch64, generated from target descriptions."
 
 # Keywords (5 max)
-keywords = ["x86-64", "aarch64", "assembler", "disassembler", "lexersketch"]
+keywords = ["x86-64", "aarch64", "assembler", "disassembler"]
 
 # Categories
 categories = ["compilers", "encoding", "no-std"]
