@@ -221,7 +221,7 @@ Numbers vary by CPU; use the trend across runs, not a single absolute. Linux num
 - **Strict decoding.** The decoder is the exact inverse of the encoder over the table, plus two redundant prefixes that real code contains (an empty REX, and REX.W on 64-bit-default forms). Everything else it rejects with the offset of the offending byte, which is what makes it a precise oracle for the encoder.
 - **Least-fixed-point relaxation.** Branches start short and lengthen only when they cannot reach; lengthening never shrinks anything, so the result is unique and minimal. A lengthening re-checks only the branches within 256 bytes of it, so relaxation is O(n log n).
 
-The target-description model, the engines, and how AArch64 fits the same model are specified in `_lexersketch/specs/TARGET-DESC.md` in the family repository.
+The target-description model, the engines, and how AArch64 fits the same model are specified in the TARGET-DESC specification in the family repository.
 
 <hr>
 <br>

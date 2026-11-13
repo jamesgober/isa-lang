@@ -63,7 +63,7 @@ table of 340 forms, written the way the Intel SDM writes its opcode tables.
 - Benchmarks (`benches/bench.rs`): encode, encode_form, decode, display, and
   assemble over a 100,000-instruction mix.
 - Examples: `encode`, `assemble`, `disassemble`.
-- `_lexersketch/specs/TARGET-DESC.md` (family repository): the
+- the TARGET-DESC specification (family repository): the
   target-description model, the engines, and how AArch64 fits it.
 
 ### Changed
